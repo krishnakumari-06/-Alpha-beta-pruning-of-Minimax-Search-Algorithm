@@ -1,6 +1,6 @@
 <h1>ExpNo 7 : Implement Alpha-beta pruning of Minimax Search Algorithm for a Simple TIC-TAC-TOE game</h1> 
-<h3>Name: Persys freeda J    </h3>
-<h3>Register Number/Staff Id: 212224060185    </h3>
+<h3>Name: KRISHNA KUMARI E</h3>
+<h3>Register Number/Staff Id: 212224060127    </h3>
 <H3>Aim:</H3>
 <p>
 Implement Alpha-beta pruning of Minimax Search Algorithm for a Simple TIC-TAC-TOE game
