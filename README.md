@@ -12,13 +12,9 @@ Implement Alpha-beta pruning of Minimax Search Algorithm for a Simple TIC-TAC-TO
 <h1>IMPLEMENTATION</h1>
 
 The project involves developing a Tic-Tac-Toe game implementation incorporating the Alpha-Beta pruning with the Minimax algorithm. Using this algorithm, the computer player analyzes the game state, evaluates possible moves, and selects the optimal action based on the anticipated outcomes.
-
 <h1>The Minimax algorithm</h1>
-
 recursively evaluates all possible moves and their potential outcomes, creating a game tree.
-
 <h1>Alpha-Beta pruning</h1>
-
 Alpha–Beta (𝛼−𝛽) algorithm is actually an improved minimax using a heuristic. It stops evaluating a move when it makes sure that it’s worse than a previously examined move. Such moves need not to be evaluated further.
 
 When added to a simple minimax algorithm, it gives the same output but cuts off certain branches that can’t possibly affect the final decision — dramatically improving the performance
@@ -34,8 +30,6 @@ When added to a simple minimax algorithm, it gives the same output but cuts off 
 # Tic-Tac-Toe using Minimax Algorithm with Alpha-Beta Pruning
 
 import math
-
-# Print the board
 def print_board(board):
     print("\n")
     for i in range(3):
@@ -110,7 +104,6 @@ def minimax(board, depth, alpha, beta, isMax):
                     if beta <= alpha:
                         break
         return best
-
     else:  # Minimizer (Human)
         best = math.inf
         for i in range(3):
@@ -122,14 +115,12 @@ def minimax(board, depth, alpha, beta, isMax):
                     best = min(best, val)
                     beta = min(beta, best)
                     if beta <= alpha:
-                        break
-        return best
-
+                       break
+    return best
 # Find the best move for AI
 def find_best_move(board):
     best_val = -math.inf
     best_move = (-1, -1)
-
     for i in range(3):
         for j in range(3):
             if board[i][j] == "_":
@@ -196,9 +187,6 @@ def play_game():
 # Run the game
 if __name__ == "__main__":
     play_game()
-
-
-
 
 <img width="682" height="897" alt="image" src="https://github.com/user-attachments/assets/595c1037-d47e-440f-8deb-084eb122c885" />
 
